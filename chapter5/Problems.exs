@@ -1,12 +1,12 @@
 defmodule PracticeFunctions do
    def fizz_buzz(0,0,_) do
-      IO.puts "FizzBuzz"
+      "FizzBuzz"
    end
    def fizz_buzz(0,_,_) do
-      IO.puts "Fizz"
+      "Fizz"
    end
    def fizz_buzz(_,0,_) do
-      IO.puts "Buzz"
+      "Buzz"
    end
    #Anything else
    def fizz_buzz(_,_,_) do
@@ -22,5 +22,10 @@ defmodule PracticeFunctions do
 
    def tuple_to_list({a,b}) do
       [a,b]
+   end
+
+
+   def prefix(pre) do
+      fn last -> "#{pre} #{last}"end
    end
 end
